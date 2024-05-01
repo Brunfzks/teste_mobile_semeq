@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:teste_mobile_semeq/app/config/const_color.dart';
+import 'package:teste_mobile_semeq/app/presenter/cubits/home_cubit/home_cubit.dart';
 import 'package:teste_mobile_semeq/app/presenter/cubits/login_cubit/login_cubit.dart';
 import 'package:teste_mobile_semeq/app/presenter/login.dart';
 
@@ -19,8 +20,12 @@ class MyApp extends StatelessWidget {
         BlocProvider<LoginCubit>(
           create: (context) => LoginCubit(),
         ),
+        BlocProvider<HomeCubit>(
+          create: (context) => HomeCubit(),
+        ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'SEMEQ',
         theme: ThemeData(
           colorScheme:

@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:teste_mobile_semeq/app/config/const_color.dart';
 import 'package:teste_mobile_semeq/app/config/const_text.dart';
+import 'package:teste_mobile_semeq/app/presenter/cubits/home_cubit/home_cubit.dart';
 import 'package:teste_mobile_semeq/app/presenter/cubits/login_cubit/login_cubit.dart';
 import 'package:teste_mobile_semeq/app/presenter/home.dart';
 import 'package:teste_mobile_semeq/app/presenter/widget/form_button.dart';
@@ -29,6 +30,8 @@ class Login extends StatelessWidget {
           child: BlocListener<LoginCubit, LoginState>(
             listener: (context, state) {
               if (state.status == LoginStatus.completed) {
+                context.read<HomeCubit>().getUser(state.user);
+                context.read<HomeCubit>().getAreas();
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Home()),
@@ -78,11 +81,9 @@ class Login extends StatelessWidget {
                         builder: (context, state) {
                           if (state.status == LoginStatus.loading) {
                             {
-                              return const SizedBox(
+                              return SizedBox(
                                 child: Center(
-                                  child: CircularProgressIndicator(
-                                    color: ConstColors.primaryColor,
-                                  ),
+                                  child: Lottie.asset('assets/animation.json'),
                                 ),
                               );
                             }

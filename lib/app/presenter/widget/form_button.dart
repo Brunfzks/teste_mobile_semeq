@@ -25,6 +25,9 @@ class FormsButton extends StatelessWidget {
           width: width,
           height: 50,
           decoration: BoxDecoration(
+              color: invertColors
+                  ? ConstColors.primaryColor
+                  : ConstColors.secondColor,
               border: Border.all(
                   color: invertColors
                       ? ConstColors.secondColor

@@ -7,3 +7,13 @@ class UserException implements Exception {
   @override
   String toString() => 'UserException(message: $message)';
 }
+
+class GetListExeption implements Exception {
+  final String message;
+  GetListExeption({
+    required this.message,
+  });
+
+  @override
+  String toString() => 'GetListExeption(message: $message)';
+}

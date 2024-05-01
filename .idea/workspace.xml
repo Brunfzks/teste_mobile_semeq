@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d184fac1-8463-4da6-b1e1-ea335672fdea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/domain/entities/user.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste_mobile_semeq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/teste_mobile_semeq.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/config/const_text.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/config/const_text.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/presenter/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/presenter/home.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feature-login",
+    "git-widget-placeholder": "develop",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "D:/GitHub/form_carboroil",
     "show.migrate.to.gradle.popup": "false"
